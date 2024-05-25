@@ -1,5 +1,6 @@
 //LANDING PAGE
 
+import Logo from "@/components/Logo";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,7 +11,7 @@ const Home = () => {
     <div className="landing-page">
       <div className="navbar">
         <div className="left">
-          <Image src="/logo/logo.png" alt="Logo" width={141} height={26} />
+          <Logo />
           <div className="line-hr"></div>
           <p className="text-14">Unlock the Secrets of Great Taste</p>
         </div>
