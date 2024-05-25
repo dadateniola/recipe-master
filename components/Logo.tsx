@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Logo() {
   const isMobile = useIsMobile();
   return (
-    <div>
+    <div className="logo-box">
       {/* Render different images based on the value of isMobile */}
       {isMobile ? (
         <Image src={"/logo/icon.png"} alt="Logo" width={40} height={26} />

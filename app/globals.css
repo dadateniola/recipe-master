@@ -258,9 +258,15 @@
   text-transform: capitalize;
 }
 
-.line-hr {
+.line-vr {
   width: 2px;
   height: 100%;
+  background-color: var(--sub);
+}
+
+.line-hr {
+  height: 2px;
+  flex: 1;
   background-color: var(--sub);
 }
 
@@ -293,7 +299,7 @@
     font-size: 13px;
   }
 
-  .navbar .left .line-hr,
+  .navbar .left .line-vr,
   .navbar .left .text-14 {
     display: none;
   }

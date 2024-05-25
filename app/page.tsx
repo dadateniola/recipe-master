@@ -12,7 +12,7 @@ const Home = () => {
       <div className="navbar">
         <div className="left">
           <Logo />
-          <div className="line-hr"></div>
+          <div className="line-vr"></div>
           <p className="text-14">Unlock the Secrets of Great Taste</p>
         </div>
         <div className="right">
@@ -53,7 +53,7 @@ const Home = () => {
       <div className="showcase-box">
         <div className="showcase">
           <div className="item">
-            <Image src="/showcase/breakfast.jpg" fill={true} alt="showcase" />
+            <Image src="/showcase/breakfast.jpg" fill={true} alt="showcase" sizes="(max-width: 850px) 240px, 20vw"/>
           </div>
           <div className="item tags">
             {tags.map((tag, index) => (
@@ -63,13 +63,13 @@ const Home = () => {
                   <span>{Math.floor(Math.random() * 10)} mins</span>
                 </div>
                 <div className="img">
-                  <Image src={`/tags/${tag}.jpg`} alt="tag" fill />
+                  <Image src={`/tags/${tag}.jpg`} alt="tag" fill sizes="35px"/>
                 </div>
               </div>
             ))}
           </div>
           <div className="item">
-            <Image src="/showcase/chef.jpg" fill={true} alt="showcase" />
+            <Image src="/showcase/chef.jpg" fill={true} alt="showcase" sizes="(max-width: 850px) 240px, 20vw"/>
           </div>
           <div className="item stats">
             <div className="data res">
@@ -88,7 +88,7 @@ const Home = () => {
             </div>
           </div>
           <div className="item">
-            <Image src="/showcase/restaurant.jpg" fill={true} alt="showcase" />
+            <Image src="/showcase/restaurant.jpg" fill={true} alt="showcase" sizes="(max-width: 850px) 240px, 20vw"/>
           </div>
         </div>
       </div>
