@@ -17,8 +17,14 @@ const Home = () => {
         </div>
         <div className="right">
           <p className="text-14">
-            Developed by: <span className="highlight">samuel adekunle</span> &{" "}
-            <span className="highlight">dada teniola</span>
+            Developed by:{" "}
+            <a href="https://github.com/weird-samuel" target="_blank" className="highlight">
+              samuel adekunle
+            </a>{" "}
+            &{" "}
+            <a href="https://github.com/dadateniola" target="_blank" className="highlight">
+              dada teniola
+            </a>
           </p>
         </div>
       </div>
@@ -53,7 +59,12 @@ const Home = () => {
       <div className="showcase-box">
         <div className="showcase">
           <div className="item">
-            <Image src="/showcase/breakfast.jpg" fill={true} alt="showcase" sizes="(max-width: 850px) 240px, 20vw"/>
+            <Image
+              src="/showcase/breakfast.jpg"
+              fill={true}
+              alt="showcase"
+              sizes="(max-width: 850px) 240px, 20vw"
+            />
           </div>
           <div className="item tags">
             {tags.map((tag, index) => (
@@ -63,13 +74,18 @@ const Home = () => {
                   <span>{Math.floor(Math.random() * 10)} mins</span>
                 </div>
                 <div className="img">
-                  <Image src={`/tags/${tag}.jpg`} alt="tag" fill sizes="35px"/>
+                  <Image src={`/tags/${tag}.jpg`} alt="tag" fill sizes="35px" />
                 </div>
               </div>
             ))}
           </div>
           <div className="item">
-            <Image src="/showcase/chef.jpg" fill={true} alt="showcase" sizes="(max-width: 850px) 240px, 20vw"/>
+            <Image
+              src="/showcase/chef.jpg"
+              fill={true}
+              alt="showcase"
+              sizes="(max-width: 850px) 240px, 20vw"
+            />
           </div>
           <div className="item stats">
             <div className="data res">
@@ -88,7 +104,12 @@ const Home = () => {
             </div>
           </div>
           <div className="item">
-            <Image src="/showcase/restaurant.jpg" fill={true} alt="showcase" sizes="(max-width: 850px) 240px, 20vw"/>
+            <Image
+              src="/showcase/restaurant.jpg"
+              fill={true}
+              alt="showcase"
+              sizes="(max-width: 850px) 240px, 20vw"
+            />
           </div>
         </div>
       </div>
