@@ -24,9 +24,11 @@ const Home = () => {
       <div className="intro-text-box">
         <div className="intro-text">
           <h1>
-            Master the Art of Cooking
+            <span>Master the Art of Cooking</span>
             <br />
-            with <span className="highlight">RecipeMaster</span>
+            <span>
+              with <span className="highlight">RecipeMaster</span>
+            </span>
           </h1>
           <p>
             <span>

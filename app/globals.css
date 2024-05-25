@@ -322,11 +322,48 @@
 }
 
 @media (max-width: 680px) {
+  .intro-text h1,
+  .intro-text h1 span {
+    font-size: 6.8vw;
+  }
+
   .intro-text p br {
     display: none;
   }
   
   .intro-text p span:last-child {
     margin-left: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar .right {
+    display: none;
+  }
+
+  .intro-text {
+    gap: 30px;
+  }
+
+  .intro-text h1,
+  .intro-text h1 span {
+    font-size: 10vw;
+  }
+
+  .intro-text h1 br {
+    display: none;
+  }
+
+  .intro-text h1 span:last-child {
+    margin-left: 10px;
+  }
+
+  .intro-text p {
+    line-height: 1.8;
+    font-size: 3.5vw;
+  }
+
+  .showcase {
+    width: 700px;
   }
 }
