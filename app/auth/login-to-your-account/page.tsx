@@ -17,7 +17,7 @@ const LoginToYourAccount = () => {
       </div>
       <div className="auth-overlay flex items-center justify-center">
         <div className="auth-form">
-          <div className="auth-icon flex justify-center">
+          <div className="auth-icon flex justify-center items-center">
             <Link href="/">
               <Image
                 src={"/logo/icon.png"}

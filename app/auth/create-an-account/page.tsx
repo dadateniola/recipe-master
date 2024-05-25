@@ -13,7 +13,6 @@ const CreateAnAccount = () => {
           fill
           alt="background image"
           sizes="100vw"
-          objectFit="cover"
         />
       </div>
       <div className="auth-overlay flex items-center justify-center">
