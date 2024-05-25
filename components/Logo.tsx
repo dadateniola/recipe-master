@@ -9,7 +9,7 @@ export default function Logo() {
     <div>
       {/* Render different images based on the value of isMobile */}
       {isMobile ? (
-        <Image src={"/logo/icon.png"} alt="Logo" width={141} height={26} />
+        <Image src={"/logo/icon.png"} alt="Logo" width={40} height={26} />
       ) : (
         <Image src={"/logo/logo.png"} alt="Logo" width={141} height={26} />
       )}

@@ -293,7 +293,8 @@
     font-size: 13px;
   }
 
-  .navbar .left *:not(img) {
+  .navbar .left .line-hr,
+  .navbar .left .text-14 {
     display: none;
   }
 
