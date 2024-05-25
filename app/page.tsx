@@ -29,11 +29,15 @@ const Home = () => {
             with <span className="highlight">RecipeMaster</span>
           </h1>
           <p>
-            RecipeMaster emphasizes expertise and mastery in the kitchen, making
-            it an attractive
+            <span>
+              RecipeMaster emphasizes expertise and mastery in the kitchen,
+              making it an attractive
+            </span>
             <br />
-            choice for users looking to refine their culinary skills and manage
-            their recipes efficiently.
+            <span>
+              choice for users looking to refine their culinary skills and
+              manage their recipes efficiently.
+            </span>
           </p>
           <div className="cta">
             <Link href="/auth/create-an-account">Create an account</Link>
