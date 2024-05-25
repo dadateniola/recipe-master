@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Recipe Master", // Title of the web page
   description: "RecipeMaster emphasizes expertise and mastery in the kitchen, making it an attractive choice for users looking to refine their culinary skills and manage their recipes efficiently.", // Description meta tag for SEO and sharing
   icons: {
-    icon: "/dt-32.png", // Path to the favicon icon
+    icon: "/logo/favicon.png", // Path to the favicon icon
   }
 };
 
