@@ -1,8 +1,15 @@
 //LOGIN PAGE
+import type { Metadata } from "next";
 
 import Image from "next/image";
 import Link from "next/link";
 import "../auth.scss";
+
+//Changing meta information of this page to something that better fits its use
+export const metadata: Metadata = {
+  title: "Login to your account",
+  description: "Access your Recipe Master account to manage your recipes, view your favorite dishes, and explore new culinary ideas.",
+};
 
 const LoginToYourAccount = () => {
   return (

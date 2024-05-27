@@ -1,8 +1,15 @@
 //CREATE ACCOUNT PAGE
+import type { Metadata } from "next";
 
 import Image from "next/image";
 import Link from "next/link";
 import "../auth.scss";
+
+//Changing meta information of this page to something that better fits its use
+export const metadata: Metadata = {
+  title: "Create an account",
+  description: "Join Recipe Master today to save your favorite recipes, create personalized meal plans, and enhance your cooking skills.",
+};
 
 const CreateAnAccount = () => {
   return (

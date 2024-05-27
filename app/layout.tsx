@@ -8,29 +8,26 @@ import "./globals.css";
 // Configure the Inter font to include the Latin subset
 const inter = Inter({ subsets: ["latin"] });
 
-// Define and export the metadata for the webpage
 export const metadata: Metadata = {
-  title: "Recipe Master", // Title of the web page
-  description: "RecipeMaster emphasizes expertise and mastery in the kitchen, making it an attractive choice for users looking to refine their culinary skills and manage their recipes efficiently.", // Description meta tag for SEO and sharing
+  title: {
+    template: "%s | Recipe Master",
+    default: "Recipe Master",
+  },
+  description: "RecipeMaster emphasizes expertise and mastery in the kitchen, making it an attractive choice for users looking to refine their culinary skills and manage their recipes efficiently.",
   icons: {
-    icon: "/logo/favicon.png", // Path to the favicon icon
-  }
+    icon: "/logo/favicon.png",
+  },
 };
 
-// Define the RootLayout component which wraps the entire application
+// RootLayout component which wraps the entire application
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode; // Define the type for children prop as React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
-    // Set the language of the document to English
     <html lang="en">
-      {/* Apply the Inter font class to the body element */}
-      <body className={inter.className}>
-        {/* Render any nested components or content passed to this layout */}
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

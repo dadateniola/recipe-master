@@ -31,6 +31,8 @@
   --button-padding: 18px 24px;
 }
 
+
+/* Landing page styles */
 .landing-page {
   padding: 20px;
   display: flex;
@@ -249,6 +251,8 @@
   overflow: hidden;
 }
 
+
+/* Common styles */
 .text-14 {
   font-size: var(--font-14);
 }
@@ -271,6 +275,19 @@
 }
 
 
+/* App styles */
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.app-content {
+  flex: 1;
+  padding: 0 15px;
+}
+
+
+/* Media queries */
 @media (max-width: 1100px) {
   .showcase-box {
     width: 100%;

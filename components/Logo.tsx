@@ -11,7 +11,7 @@ export default function Logo() {
       {isMobile ? (
         <Image src={"/logo/icon.png"} alt="Logo" width={40} height={26} />
       ) : (
-        <Image src={"/logo/logo.png"} alt="Logo" width={141} height={26} />
+        <Image src={"/logo/logo.png"} alt="Logo" width={141} height={26} priority />
       )}
     </div>
   );
