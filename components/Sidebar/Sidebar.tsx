@@ -22,7 +22,7 @@ export default function Sidebar() {
                   src={`/icons/${icon}.png`}
                   alt="icon"
                   fill
-                  sizes="25px"
+                  sizes="20px"
                 />
               </div>
               <p>{icon}</p>
@@ -33,7 +33,7 @@ export default function Sidebar() {
       <div className={styles.bottom}>
         <div className={styles.item}>
           <div className={styles["item-icon"]}>
-            <Image src="/icons/team.png" alt="icon" fill sizes="25px" />
+            <Image src="/icons/team.png" alt="icon" fill sizes="20px" />
           </div>
           <p className={styles["no-cap"]}>Meet the team</p>
         </div>

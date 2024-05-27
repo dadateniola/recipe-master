@@ -274,6 +274,10 @@
   background-color: var(--sub);
 }
 
+img {
+  object-fit: cover;
+}
+
 
 /* App styles */
 .app {
@@ -283,7 +287,10 @@
 
 .app-content {
   flex: 1;
-  padding: 0 15px;
+}
+
+.app-content > * {
+  padding: 15px;
 }
 
 

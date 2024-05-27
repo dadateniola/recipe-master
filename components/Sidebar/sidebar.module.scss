@@ -37,19 +37,20 @@
   .item {
     padding: $item-padding;
     border-radius: $radius;
+    cursor: pointer;
 
     display: flex;
     align-items: center;
     gap: $padding-x;
 
-    // &:first-child {
-    //   background-color: black;
-    //   color: white;
+    &:hover {
+      background-color: black;
+      color: white;
 
-    //   img {
-    //     filter: invert(100%);
-    //   }
-    // }
+      img {
+        filter: invert(100%);
+      }
+    }
 
     .item-icon {
       position: relative;

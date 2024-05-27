@@ -1,0 +1,100 @@
+// Varaiables
+$padding: 10px;
+$radius: 10px;
+$font-size: 14px;
+
+//Reusables
+%icon-text {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  & > *:first-child {
+    position: relative;
+    width: 18px;
+    height: 18px;
+  }
+
+  p {
+    font-size: $font-size;
+  }
+}
+
+//Element styles
+.navbar {
+  border-bottom: 2px solid var(--sub);
+
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+
+  .search-box {
+    padding: $padding;
+    width: 300px;
+    background-color: var(--bright);
+    border-radius: $radius;
+
+    display: flex;
+    gap: $padding;
+    align-items: center;
+
+    .search {
+      flex: 1;
+
+      @extend %icon-text;
+
+      img {
+        opacity: 0.7;
+      }
+
+      p {
+        font-weight: 600;
+        flex: 1;
+        color: rgba($color: #000000, $alpha: 0.6);
+      }
+    }
+
+    .command {
+      padding: 5px;
+      background-color: #fff;
+      border-radius: 5px;
+
+      p {
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .action {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    button {
+      padding: $padding 15px;
+      background-color: black;
+      border-radius: $radius;
+      color: white;
+      height: 50px;
+
+      @extend %icon-text;
+
+      img {
+        filter: invert(100%);
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+
+    .pfp {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      overflow: hidden;
+    }
+  }
+}
