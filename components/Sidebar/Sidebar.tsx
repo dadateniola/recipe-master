@@ -8,7 +8,7 @@ import Logo from "../Logo";
 import styles from "./sidebar.module.scss";
 
 export default function Sidebar() {
-  const menuIcons = ["home", "recipes", "messages"];
+  const menuIcons = ["dashboard", "recipes", "messages"];
 
   return (
     <aside className={styles.sidebar}>
@@ -16,7 +16,7 @@ export default function Sidebar() {
         <Logo />
         <div className={styles.menu}>
           {menuIcons.map((icon, index) => (
-            <div className={styles.item} key={index}>
+            <Link href={`/${icon}`} className={styles.item} key={index}>
               <div className={styles["item-icon"]}>
                 <Image
                   src={`/icons/${icon}.png`}
@@ -26,7 +26,7 @@ export default function Sidebar() {
                 />
               </div>
               <p>{icon}</p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
