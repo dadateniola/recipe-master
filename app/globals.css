@@ -48,7 +48,7 @@
   justify-content: space-between;
 }
 
-.navbar > * {
+.navbar>* {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -289,7 +289,7 @@ img {
   flex: 1;
 }
 
-.app-content > * {
+.app-content>* {
   padding: 15px;
 }
 
@@ -353,6 +353,7 @@ img {
 }
 
 @media (max-width: 680px) {
+
   .intro-text h1,
   .intro-text h1 span {
     font-size: 6.8vw;
@@ -361,7 +362,7 @@ img {
   .intro-text p br {
     display: none;
   }
-  
+
   .intro-text p span:last-child {
     margin-left: 5px;
   }
