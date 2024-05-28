@@ -137,11 +137,16 @@
   object-fit: cover;
 }
 
-.showcase .item.stats {
+.item.stats {
   display: flex;
   flex-direction: column;
   gap: 10px;
   background-color: transparent;
+}
+
+.item.stats .heading p {
+  font-weight: 600;
+  font-size: var(--font-14);
 }
 
 .stats .row {
@@ -175,6 +180,10 @@
   background-color: var(--greenish);
 }
 
+.stats .data.other {
+  background-color: transparent;
+}
+
 .stats .data p {
   font-size: var(--font-20);
   font-weight: 700;
@@ -182,6 +191,10 @@
 
 .stats .data span {
   font-size: var(--font-13);
+}
+
+.stats .data.other span {
+  font-weight: 600;
 }
 
 .showcase .item.tags {
@@ -276,6 +289,25 @@
 
 img {
   object-fit: cover;
+}
+
+
+/* Dashboard styles */
+.dash-intro {
+  display: flex;
+  gap: 10px;
+  height: 260px;
+}
+
+.dash-intro-img {
+  position: relative;
+  flex: 1;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.dash-intro .item.stats {
+  width: 210px;
 }
 
 
