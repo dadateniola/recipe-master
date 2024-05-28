@@ -16,9 +16,16 @@
   $font-size: 14px;
   $item-padding: 12px;
 
-  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--sidebar-width);
+  height: 100dvh;
   padding: $padding-y $padding-x;
   border-right: 2px solid var(--sub);
+  background-color: white;
+
+  z-index: 10;
 
   @include flex-column($padding-y, space-between);
 

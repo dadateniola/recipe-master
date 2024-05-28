@@ -2,6 +2,8 @@
 import { Metadata } from "next"
 import Image from "next/image";
 
+import UserCard from "@/components/UserCard/UserCard";
+
 //Changing meta information of this page to something that better fits its use
 export const metadata: Metadata = {
   title: "Dashboard",
@@ -46,6 +48,15 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="line-hr"></div>
+      <div className="grid">
+        <UserCard />
+        <UserCard />
+        <UserCard />
+        <UserCard />
+        <UserCard />
+        <UserCard />
       </div>
     </main>
   );

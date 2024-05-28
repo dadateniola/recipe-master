@@ -1,0 +1,69 @@
+@mixin flex-column($gap: 20px, $justify: initial) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+.user {
+    $gap: 10px;
+    $radius: 15px;
+
+    padding: 10px;
+    border-radius: 15px;
+    background-color: var(--bright);
+
+    @include flex-column($gap);
+
+    .info {
+        display: flex;
+        gap: $gap;
+
+        .user-img {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            border-radius: $radius;
+            overflow: hidden;
+        }
+
+        .user-text {
+            @include flex-column(2px, center);
+
+            p {
+                text-transform: capitalize;
+                font-size: var(--font-14);
+            }
+
+            span {
+                font-size: var(--font-13);
+                color: var(--sub-text);
+            }
+        }
+    }
+
+    .user-showcase {
+        display: flex;
+        gap: calc($gap / 2);
+
+        .main {
+            position: relative;
+            flex: 1;
+            border-radius: $radius;
+            overflow: hidden;
+        }
+        
+        .more {
+            width: 100px;
+            height: 120px;
+            @include flex-column(calc($gap / 2));
+
+            .other {
+                position: relative;
+                flex: 1;
+                border-radius: $radius;
+                overflow: hidden;
+            }
+        }
+    }
+}
