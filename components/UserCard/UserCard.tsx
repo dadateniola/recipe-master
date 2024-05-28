@@ -21,12 +21,11 @@ const UserCard = ({ pfp, name, recipes, showcase }: UserCardProps) => {
     <div className={styles.user}>
       <div className={styles.info}>
         <div className={styles["user-img"]}>
-          {
-            pfp ?
+          {pfp ? (
             <Image src={pfp} alt="user" fill sizes="50px" />
-            :
+          ) : (
             <div className="empty"></div>
-          }
+          )}
         </div>
         <div className={styles["user-text"]}>
           <p>{name || "no name"}</p>

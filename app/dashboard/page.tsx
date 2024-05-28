@@ -1,7 +1,7 @@
 //DASHBOARD
 import { Metadata } from "next";
 import Image from "next/image";
-import { users } from "./data";
+import { users } from "../data";
 
 import UserCard from "@/components/UserCard/UserCard";
 
