@@ -1,6 +1,7 @@
 //DASHBOARD
-import { Metadata } from "next"
+import { Metadata } from "next";
 import Image from "next/image";
+import { users } from "./data";
 
 import UserCard from "@/components/UserCard/UserCard";
 
@@ -16,12 +17,7 @@ const Dashboard = () => {
     <main className="dashboard">
       <div className="dash-intro">
         <div className="dash-intro-img">
-          <Image
-            src="/showcase/dash.jpg"
-            alt="intro image"
-            fill
-            sizes="70vw"
-          />
+          <Image src="/showcase/dash.jpg" alt="intro image" fill sizes="70vw" />
         </div>
         <div className="item stats">
           <div className="heading">
@@ -51,12 +47,15 @@ const Dashboard = () => {
       </div>
       <div className="line-hr"></div>
       <div className="grid">
-        <UserCard />
-        <UserCard />
-        <UserCard />
-        <UserCard />
-        <UserCard />
-        <UserCard />
+        {users.map((user, index) => (
+          <UserCard
+            key={index}
+            pfp={user.pfp}
+            name={user.name}
+            recipes={user.recipes}
+            showcase={user.showcase}
+          />
+        ))}
       </div>
     </main>
   );
