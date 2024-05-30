@@ -23,6 +23,7 @@ const formSchema = z.object({
 import { z } from "zod";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
+import { log } from "util";
 
 export default function SignupForm() {
   const router = useRouter();
@@ -35,7 +36,7 @@ export default function SignupForm() {
     },
   });
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit(values: z.infer<typeof formSchema>) {    
     const { username, email, password } = values;
     toast.success(`${username}, ${email}, ${password}`);
 
@@ -62,7 +63,7 @@ export default function SignupForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)}>
+      <form onSubmit={form.handleSubmit(onSubmit)} id="auth-form">
         <FormField
           control={form.control}
           name="username"
@@ -76,7 +77,7 @@ export default function SignupForm() {
                   {...field}
                 />
               </FormControl>
-              {/* <FormMessage /> */}
+              <FormMessage />
             </FormItem>
           )}
         />
@@ -93,7 +94,7 @@ export default function SignupForm() {
                   {...field}
                 />
               </FormControl>
-              {/* <FormMessage /> */}
+              <FormMessage />
             </FormItem>
           )}
         />
@@ -110,7 +111,7 @@ export default function SignupForm() {
                   {...field}
                 />
               </FormControl>
-              {/* <FormMessage /> */}
+              <FormMessage />
             </FormItem>
           )}
         />
